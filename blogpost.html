@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <style>
+        body {
+  background-color: #1A1A1A ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.blog-post-card {
+  background-color: white;
+  border-radius: 12px;
+  width: 400px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.post-img {
+  width: 100%;
+  display: block;
+  border-bottom: 4px solid #e94560;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.post-excerpt {
+  color: #555577;
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #e94560;
+  margin: 10px;
+  /*0 0 8px 0*/
+  padding: 10px;
+  /*10px 22px*/
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration:none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: #f08080;
+}
+    </style>
+</head>
+<body>
+ <div class="blog-post-card">
+    <img
+      class="post-img"
+      src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg"
+      alt="A scenic cover photo for the blog post"
+     />
+    <div class="post-content">
+      <h2 class="post-title">Mastering CSS Backgrounds</h2>
+      <p class="post-excerpt">
+        Dive into the world of CSS backgrounds — from gradients and image sizing
+        to accessibility best practices that make your designs shine for everyone.
+      </p>
+      <a class="read-more" href="#">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
