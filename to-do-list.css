@@ -1,0 +1,101 @@
+ body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f0;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+ 
+/* ── Card ── */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.2rem 2.4rem;
+  width: 340px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+ 
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+ 
+/* ── Todo List ── */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+ 
+.todo-list > li {
+  background: #e8f0e8;
+  border-radius: 10px;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+}
+ 
+/* ── Checkbox ── */
+.todo-list input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #4a7c59;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+ 
+/* ── Label ── */
+.todo-list label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2b2b2b;
+  cursor: pointer;
+  flex: 1;
+}
+ 
+/* ── Sub-item List ── */
+.sub-item {
+  list-style: square;
+  width: 100%;
+  padding-left: 2rem;
+  margin-top: 0.2rem;
+}
+ 
+.sub-item li {
+  color: #4a7c59;
+}
+/* ── Links ── */
+.sub-item-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+ 
+.sub-item-link:link {
+  color: #2563b0;
+}
+ 
+.sub-item-link:visited {
+  color: #7c3aed;
+}
+ 
+.sub-item-link:hover {
+  color: #059669;
+}
+ 
+.sub-item-link:focus {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+ 
+.sub-item-link:active {
+  color: #dc2626;
+}
